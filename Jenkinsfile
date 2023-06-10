@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('QA') {
+      steps {
+        echo 'Sanity API test'
+        echo 'Sanity UI test'
+      }
+    }
+
   }
 }
